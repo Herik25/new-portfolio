@@ -30,7 +30,7 @@ function WindowWrapper(Componenet, windowKey) {
         onPress: () => focusWindow(windowKey),
       });
 
-      return instance.kill();
+      return () => instance.kill();
     }, []);
 
     useLayoutEffect(() => {
