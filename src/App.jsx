@@ -6,6 +6,7 @@ import {
   Contact,
   Finder,
   ImageWindow,
+  Photos,
   Resume,
   Safari,
   Terminal,
@@ -30,6 +31,7 @@ function App() {
       <ImageWindow />
       <Contact />
       <Home />
+      <Photos />
     </div>
   );
 }
