@@ -11,6 +11,7 @@ import {
   Terminal,
   Text,
 } from "#windows";
+import Home from "#windows/Home";
 
 gsap.registerPlugin(Draggable);
 
@@ -28,6 +29,7 @@ function App() {
       <Text />
       <ImageWindow />
       <Contact />
+      <Home />
     </div>
   );
 }
