@@ -1,6 +1,5 @@
-@import "tailwindcss";
-
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import "tailwindcss";
 
 html,
 body {
@@ -79,7 +78,7 @@ body {
   }
 
   #dock {
-    @apply absolute bottom-5 left-1/2 -translate-x-1/2 z-50 select-none max-sm:hidden;
+    @apply absolute bottom-5 left-1/2 -translate-x-1/2 z-1100 select-none max-sm:hidden;
 
     .dock-container {
       @apply bg-white/20 backdrop-blur-md justify-between rounded-2xl p-1.5 flex items-end gap-1.5;
@@ -129,37 +128,7 @@ body {
       }
     }
 
-    .blog {
-      @apply bg-white p-10 max-w-3xl mx-auto;
 
-      h2 {
-        @apply text-xl font-bold text-pink-600 mb-10;
-      }
-
-      .blog-post {
-        @apply grid grid-cols-12 space-x-5;
-
-        img {
-          @apply size-full rounded-md object-cover;
-        }
-
-        .content {
-          @apply col-span-10 space-y-3;
-
-          p {
-            @apply text-xs text-gray-500;
-          }
-
-          h3 {
-            @apply font-semibold text-base text-gray-800;
-          }
-
-          a {
-            @apply text-blue-600 text-xs hover:underline flex items-center gap-3;
-          }
-        }
-      }
-    }
   }
 
   #terminal {
@@ -269,11 +238,11 @@ body {
       @apply p-5;
 
       ul {
-        @apply grid grid-cols-5 grid-rows-5 gap-2.5;
+        @apply grid grid-cols-5 gap-2.5;
 
         li {
           img {
-            @apply size-full object-cover rounded-lg;
+            @apply size-full object-cover rounded-lg max-h-60;
           }
 
           &:first-child {
